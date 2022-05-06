@@ -14,7 +14,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: black;
+  background: #010101;
   scroll-snap-align: start;
 }
 .pageexit {
@@ -24,7 +24,7 @@
   height: 40%;
   width: 100%;
   position: relative;
-  background: black;
+  background: #010101;
   scroll-snap-align: start;
 }
 
@@ -45,10 +45,10 @@
   background:#3d3d3d;
   border-radius: 6px;
   margin: 2px;
-  font-size: 6rem;
+  font-size: 5vw;
 }
 #page1 {
-  background: black;
+  background: #010101;
   height: 100%;
   width: 100%;
 }
@@ -64,22 +64,22 @@
   background: #010A2D;
 }
 #page5 {
-  background: black;
+  background: #010101;
 }
 #page7 {
   background: #010A2D;
 }
 #page10 {
-  background: black;
+  background: #010101;
 }
 #page11 {
-  background: black;
+  background: #010101;
 }
 #page13 {
-  background: black;
+  background: #010101;
 }
 #page14 {
-  background: black;
+  background: #010101;
 }
 
 #picp1 {
@@ -159,9 +159,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 827px;
-  height: 552px;
-  left: 92%;
+  width: 90%;
+  height: 65%;
+  left: 100%;
   top: 12%;
 }
 #pic11{
@@ -172,7 +172,7 @@
   height: 80%;
   width: 50%;
   left: 0%;
-  bottom: 5%;
+  bottom: 0%;
 /*   transform: scale(0.9); */
 }
 #pic13{
@@ -197,7 +197,7 @@
   transform:scale(0.9);
 }
 .header {
-  font-size: 3em;
+  font-size: 3vw;
   position: absolute;
   top: 40%;
   right: 10%;
@@ -223,17 +223,21 @@
   z-index: 99;
 }
 .q-size-n {
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   color:white ;
+/*   border: 1px solid red; */
 }
 .q-size-m {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
+/*   border: 1px solid red; */
 }
 .q-size-h {
-  font-size: 2rem;
+  font-size: 2vw;
+/*   border: 1px solid red; */
 }
 .q-size-l {
-  font-size: 3rem;
+  font-size: 3vw;
+/*   border: 1px solid red; */
 }
 
 .qoute {
@@ -246,25 +250,31 @@
   top: 55%;
   left: 65%;
   width: fit-content;
+/*   border: 1px solid red; */
 }
 #qoute2 {
   position: absolute;
   top: 25%;
+/*   border: 1px solid red; */
 }
 #qoute3 {
   position: absolute;
   top:30%;
+/*   border: 1px solid red; */
 }
 #day {
   font-size: 10rem;
+/*   border: 1px solid red; */
 }
 #qoute4 {
   position: absolute;
   top: 5%;
+/*   border: 1px solid red; */
 }
 #sharpword {
   position: absolute;
   bottom: 10% ;
+/*   border: 1px solid red; */
 }
 
 #qoute5 {
@@ -275,6 +285,7 @@
   left: 0;
   bottom: 0;
   margin-left: 2%;
+/*   border: 1px solid red; */
 }
 
 #qoute6 {
@@ -284,16 +295,19 @@
   height: 80%;
   left: 55%;
   bottom: 0;
+/*   border: 1px solid red; */
 }
 #wps {
   width: 50%;
   text-align:right;
+/*   border: 1px solid red; */
 }
 
 #qoute7 {
   position: absolute;
   text-align: center;
   top: 40%;
+/*   border: 1px solid red; */
 }
 #qoute8 {
   position: absolute;
@@ -302,6 +316,7 @@
   height: 80%;
   left: 5%;
   bottom: 0;
+/*   border: 1px solid red; */
 }
 
 #qoute9 {
@@ -311,6 +326,7 @@
   height: 80%;
   left: 55%;
   bottom: 0;
+/*   border: 1px solid red; */
 }
 #qoute10 {
   position: absolute;
@@ -320,6 +336,7 @@
   left: 0;
   bottom: 0;
   margin-left: 2%;
+/*   border: 1px solid red; */
 }
 #qoute11 {
   position: absolute;
@@ -329,6 +346,7 @@
   left: 55%;
   bottom: 0;
   margin-right: 2%;
+/*   border: 1px solid red; */
 }
 #qoute13 {
   position: absolute;
@@ -338,6 +356,7 @@
   left: 0;
   bottom: 0;
   margin-left: 2%;
+/*   border: 1px solid red; */
 }
 
 #qoute14 {
@@ -347,6 +366,7 @@
   height: 80%;
   left: 60%;
   top: 45%;
+/*   border: 1px solid red; */
 }
 
 .Thai{
@@ -392,8 +412,8 @@ p{
   }
  #rectangle_page11 {
     position: absolute;
-    top: 240px;
-    left: 65%;
+    top: 245px;
+    left: 60%;
     width: 70px;
     height: 4px;
     background: white;
@@ -444,10 +464,10 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next{
+  top: 700%;
   cursor: pointer;
-  position: relative;
-  top: 50%;
+  position: absolute;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -459,10 +479,12 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+.prev{
+  right: 50%;
+}
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  left: 50%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
